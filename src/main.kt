@@ -1,4 +1,5 @@
 import kotlin.math.*
+
 fun main()
 {
     println("Решебник на языке программирования Kotlin по Задачнику Абрамяна.")
@@ -11,6 +12,7 @@ fun main()
     when(user_choise)
     {
         "b1" -> Begin1()
+        "b10" -> Begin10()
         else -> print("Такой задачи нет!")
 
 
