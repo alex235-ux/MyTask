@@ -22,17 +22,41 @@ fun main()
 fun Begin1()
 {
 //АААААААААААААААААААААААААААААААААААААА
-
-
-
 }
 
+fun Begin8()
+{
+    print("Сделал Васильев Егор")
+    print("\nДаны два числа a и b. Найти их среднее арифметическое: (a + b)/2.\nВведите a: ")
+    var a = readLine()!!.toFloat()
+    print("Введите b: ")
+    var b = readLine()!!.toFloat()
+    var srar = (a + b) / 2
+    print("Среднее арифметическое двух чисел = $srar ")
+}
 
 fun Begin9()
 {
 
     ////
 
+}
+import kotlin.math.*
+fun Begin10()
+{
+    print("Сделал Васильев Егор")
+    print("\n Даны два ненулевых числа. Найти сумму, разность, произведение и частное их квадратов.\n Введите а: ")
+    var a = readLine()!!.toFloat()
+    print(" Введите b: ")
+    var b = readLine()!!.toFloat()
+    var pow2_plus = a.pow(2)+b.pow(2)
+    var pow2_minus = a.pow(2)-b.pow(2)
+    var pow2_multi = a.pow(2)*b.pow(2)
+    var pow2_div = a.pow(2)/b.pow(2)
+    println("Сумма = $pow2_plus")
+    println("Разность = $pow2_minus")
+    println("Произведение = $pow2_multi")
+    println("Частное = $pow2_div")
 }
 
 //Привет, ребята!
