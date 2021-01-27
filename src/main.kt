@@ -1,3 +1,4 @@
+import kotlin.math.*
 fun main()
 {
     println("Решебник на языке программирования Kotlin по Задачнику Абрамяна.")
@@ -41,7 +42,6 @@ fun Begin9()
     ////
 
 }
-import kotlin.math.*
 fun Begin10()
 {
     print("Сделал Васильев Егор")
