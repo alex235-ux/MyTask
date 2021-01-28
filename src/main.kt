@@ -3,9 +3,9 @@ import kotlin.math.*
 fun main()
 {
     println("Решебник на языке программирования Kotlin по Задачнику Абрамяна.")
-    println("Внутренний синтаксис (Begin8 = b8, Begin10 = b10, Integer1 = i1, Case1 = c1, Begin5 = b5)")
+    println("Внутренний синтаксис (Begin8 = b8, Begin10 = b10, Integer1 = i1, Case1 = c1, Begin5 = b5, Begin6 = b6)")
     println("Список доступных задач:")
-    println("Begin1_Begin2, Begin5, Begin8, Begin10, Integer1, Case1")
+    println("Begin1_Begin2, Begin5, Begin6 Begin8, Begin10, Integer1, Case1")
 //    println("Список доступных задач:")
 //    println("Список доступных задач:")
     print("Выберите задачу: "); var user_choise = readLine()
@@ -17,6 +17,7 @@ fun main()
         "b10" -> Begin10()
         "c1"  -> Case1()
         "i1" -> Integer1()
+        "b6" -> Begin6()
         else -> print("Такой задачи нет!")
 
 
@@ -63,6 +64,24 @@ fun Begin5()
     var edizm = readLine()
     print("Объём (V) = $V $edizm")
     print("\nПлощадь (S) = $S $edizm")
+}
+
+fun Begin6()
+{
+    print("\n Сделал Васильев Егор")
+    print("\n Даны длины ребер a, b, c прямоугольного параллелепипеда. Найти его объем V = a·b·c и площадь поверхности S = 2·(a·b + b·c + a·c).")
+    print("\n Введите a: ")
+    var a = readLine()!!.toInt()
+    print("\n Введите b: ")
+    var b = readLine()!!.toInt()
+    print("\n Введите c: ")
+    var c = readLine()!!.toInt()
+    print("Введите единицу измерения (мм, см, дм, м, км): ")
+    var edizm = readLine()
+    var V = (a * b * c)
+    var S = 2 * (a * b + b * c + a * c)
+    print("Объём: $V $edizm")
+    print("\nПлощадь поверхности: $S $edizm")
 }
 
 fun Begin8()
