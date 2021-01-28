@@ -3,19 +3,20 @@ import kotlin.math.*
 fun main()
 {
     println("Решебник на языке программирования Kotlin по Задачнику Абрамяна.")
-    println("Внутренний синтаксис (Begin8 = b8, Begin10 = b10, Integer1 = i1, Case1 = c1)")
+    println("Внутренний синтаксис (Begin8 = b8, Begin10 = b10, Integer1 = i1, Case1 = c1, Begin5 = b5)")
     println("Список доступных задач:")
-    println("Begin8, Begin10, Integer1, Case1")
+    println("Begin1_Begin2, Begin5, Begin8, Begin10, Integer1, Case1")
 //    println("Список доступных задач:")
 //    println("Список доступных задач:")
     print("Выберите задачу: "); var user_choise = readLine()
     when(user_choise)
     {
-        "b1" -> Begin1()
+        "b1_b2" -> Begin1_Begin2()
+        "b5" -> Begin5()
         "b8" -> Begin8()
         "b10" -> Begin10()
         "c1"  -> Case1()
-         "i1" -> Integer1()
+        "i1" -> Integer1()
         else -> print("Такой задачи нет!")
 
 
@@ -25,9 +26,43 @@ fun main()
 
 
 
-fun Begin1()
+fun Begin1_Begin2()
 {
+    println("Введите сторону квадрата: ")
+    var a = readLine()!!.toFloat()
+    println("Введите операцию: найти площадь квадрата (S) или периметр квадрата (P)")
+    var oper = readLine()
+    println("Введите единицу измерения (мм, см, дм, м, км): ")
+    var edizm = readLine()
+    if (oper == "S")
+    {
+        var ss = (a*a)
+        print(ss)
+        print( edizm)
+    }
+    if (oper == "P")
+    {
+        var pp = (a*4)
+        print(pp)
+        print( edizm)
+    }
 
+}
+
+
+fun Begin5()
+{
+    print("\n Сделал Васильев Егор")
+    print("\n Дана длина ребра куба a. Найти объем куба V = a3 и площадь его поверхности S = 6·a2")
+    print("\n Введите a: ")
+    var a = readLine()!!.toInt()
+    var V = (a * 3)
+    var a2 = (a * 2)
+    var S = (a2 * 6)
+    print("Введите единицу измерения (мм, см, дм, м, км): ")
+    var edizm = readLine()
+    print("Объём (V) = $V $edizm")
+    print("\nПлощадь (S) = $S $edizm")
 }
 
 fun Begin8()
