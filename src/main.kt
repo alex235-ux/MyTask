@@ -62,10 +62,12 @@ fun Begin3()
     var a = readLine()!!.toInt()
     print("\nВведите b: ")
     var b = readLine()!!.toInt()
+    println("Введите единицу измерения (мм, см, дм, м, км): ")
+    var edizm = readLine()
     var S = a * b
     var P = 2 * (a + b)
-    print("\nS: $S")
-    print("\nP: $P")
+    print("\nS: $S $edizm")
+    print("\nP: $P $edizm")
 }
 fun Begin4()
 {
@@ -73,9 +75,11 @@ fun Begin4()
     print("\nДан диаметр окружности d. Найти ее длину L = π·d. В качестве значения π использовать 3.14.")
     print("\nВведите d: ")
     var d = readLine()!!.toInt()
+    println("Введите единицу измерения (мм, см, дм, м, км): ")
+    var edizm = readLine()
     var π = 3.14
     var L = π * d
-    print("\nL: $L")
+    print("\nL: $L $edizm")
 }
 fun Begin5()
 {
