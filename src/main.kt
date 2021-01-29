@@ -4,9 +4,9 @@ import kotlin.math.*
 fun main()
 {
     println("\nРешебник на языке программирования Kotlin по Задачнику Абрамяна.")
-    println("Внутренний синтаксис (Begin8 = b8, Begin10 = b10, Integer1 = i1, Case1 = c1, Begin5 = b5, Begin6 = b6, Begin1_Begin2 = b1_b2, Begin3 = b3, Begin4 = b4)")
+    println("Внутренний синтаксис (Begin8 = b8, Begin10 = b10, Integer1 = i1, Case1 = c1, Begin5 = b5, Begin6 = b6, Begin1_Begin2 = b1_b2, Begin3 = b3, Begin4 = b4, Begin7 = b7)")
     println("Список доступных задач:")
-    println("Begin1_Begin2, Begin3, Begin4, Begin5, Begin6 Begin8, Begin10, Integer1, Case1")
+    println("Begin1_Begin2, Begin3, Begin4, Begin5, Begin6, Begin7 ,Begin8, Begin10, Integer1, Case1")
 //    println("Список доступных задач:")
 //    println("Список доступных задач:")
     print("Выберите задачу: "); var user_choise = readLine()
@@ -21,6 +21,7 @@ fun main()
         "c1"  -> Case1()
         "i1" -> Integer1()
         "b6" -> Begin6()
+        "b7" -> Begin7()
         else -> print("Такой задачи нет!")
 
 
@@ -111,6 +112,22 @@ fun Begin6()
     var S = 2 * (a * b + b * c + a * c)
     print("Объём: $V $edizm")
     print("\nПлощадь поверхности: $S $edizm")
+}
+fun Begin7()
+{
+    print("\n Сделал Васильев Егор")
+    print("\n Найти длину окружности L и площадь круга S заданного радиуса R.")
+        println("Число π всегда равно 3,14(примерно)")
+        val pi = 3.14
+        println (pi)
+        print("Введите радиус окружности.")
+        println(" После введения нажмите Enter.")
+        val R = readLine()!!.toInt()
+        val R2 = R*R
+        val L = 2 * pi * R
+        val S = pi * R2
+        println("L = $L")
+        println("S = $S")
 }
 fun Begin8()
 {
