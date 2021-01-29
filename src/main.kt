@@ -1,17 +1,20 @@
+import javax.print.attribute.standard.PrinterInfo
 import kotlin.math.*
 
 fun main()
 {
-    println("Решебник на языке программирования Kotlin по Задачнику Абрамяна.")
-    println("Внутренний синтаксис (Begin8 = b8, Begin10 = b10, Integer1 = i1, Case1 = c1, Begin5 = b5, Begin6 = b6)")
+    println("\nРешебник на языке программирования Kotlin по Задачнику Абрамяна.")
+    println("Внутренний синтаксис (Begin8 = b8, Begin10 = b10, Integer1 = i1, Case1 = c1, Begin5 = b5, Begin6 = b6, Begin1_Begin2 = b1_b2, Begin3 = b3, Begin4 = b4)")
     println("Список доступных задач:")
-    println("Begin1_Begin2, Begin5, Begin6 Begin8, Begin10, Integer1, Case1")
+    println("Begin1_Begin2, Begin3, Begin4, Begin5, Begin6 Begin8, Begin10, Integer1, Case1")
 //    println("Список доступных задач:")
 //    println("Список доступных задач:")
     print("Выберите задачу: "); var user_choise = readLine()
     when(user_choise)
     {
         "b1_b2" -> Begin1_Begin2()
+        "b3"  -> Begin3()
+        "b4" -> Begin4()
         "b5" -> Begin5()
         "b8" -> Begin8()
         "b10" -> Begin10()
@@ -51,6 +54,29 @@ fun Begin1_Begin2()
 }
 
 
+fun Begin3()
+{
+    print("\nСделал Васильев Егор")
+    print("\nДаны стороны прямоугольника a и b. Найти его площадь S = a·b и периметр P = 2·(a + b).")
+    print("\nВведите а: ")
+    var a = readLine()!!.toInt()
+    print("\nВведите b: ")
+    var b = readLine()!!.toInt()
+    var S = a * b
+    var P = 2 * (a + b)
+    print("\nS: $S")
+    print("\nP: $P")
+}
+fun Begin4()
+{
+    print("\nСделал Васильев Егор")
+    print("\nДан диаметр окружности d. Найти ее длину L = π·d. В качестве значения π использовать 3.14.")
+    print("\nВведите d: ")
+    var d = readLine()!!.toInt()
+    var π = 3.14
+    var L = π * d
+    print("\nL: $L")
+}
 fun Begin5()
 {
     print("\n Сделал Васильев Егор")
@@ -65,7 +91,6 @@ fun Begin5()
     print("Объём (V) = $V $edizm")
     print("\nПлощадь (S) = $S $edizm")
 }
-
 fun Begin6()
 {
     print("\n Сделал Васильев Егор")
@@ -83,7 +108,6 @@ fun Begin6()
     print("Объём: $V $edizm")
     print("\nПлощадь поверхности: $S $edizm")
 }
-
 fun Begin8()
 {
     print("Сделал Васильев Егор")
@@ -94,7 +118,6 @@ fun Begin8()
     var srar = (a + b) / 2
     print("Среднее арифметическое двух чисел = $srar ")
 }
-
 fun Begin9()
 {
 
@@ -116,8 +139,6 @@ fun Begin10()
     println("Произведение = $pow2_multi")
     println("Частное = $pow2_div")
 }
-
-
 fun Integer1()
 {
     print("Сделал Васильев Егор")
@@ -126,14 +147,6 @@ fun Integer1()
     var M = (L / 100)
     print("\n Метров: $M")
 }
-
-
-
-
-
-
-
-
 fun Case1()
 {
     print("Сделал Васильев Егор")
