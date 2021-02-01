@@ -1,6 +1,6 @@
 import javax.print.attribute.standard.PrinterInfo
 import kotlin.math.*
-
+////Олололло
 fun main()
 {
     println("\nРешебник на языке программирования Kotlin по Задачнику Абрамяна.")
