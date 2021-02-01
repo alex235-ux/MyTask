@@ -30,6 +30,7 @@ fun main()
         "Begin9" -> Begin9()
         "b10" -> Begin10()
         "Begin10" -> Begin10()
+        "b40" -> Begin_40()
         "i1" -> Integer1()
         "Integer1" -> Integer1()
         "c1"  -> Case1()
@@ -220,3 +221,34 @@ fun Case1()
 }
 
 
+fun Begin_40()
+{
+    println("Сделал Лунёв Никита")
+    println("Первая переменная")
+    var A1 = readLine()!!.toDouble()
+    println("ВтОрая переменная")
+    var B1 = readLine()!!.toDouble()
+    println("ТретЬя переменная")
+    var C1 = readLine()!!.toDouble()
+    println("ЧЕтвёртая переменная")
+    var A2 = readLine()!!.toDouble()
+    println("ПятаЯ переменная")
+    var B2 = readLine()!!.toDouble()
+    println("ШестАя пременая")
+    var C2 = readLine()!!.toDouble()
+
+    var D = A1 + B2 - A2 + B1
+
+    var X = (C1 * B2 - C2 * B1) / D
+
+    var Y = (A1 * C2 - A2 * C1) / D
+
+    var F1 = A1 * X + B1 * Y
+
+    var F2 = A2 * X + B2 * Y
+
+    println(X)
+    println(Y)
+    println(F1)
+    println(F2)
+}
