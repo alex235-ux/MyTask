@@ -1,6 +1,6 @@
 import javax.print.attribute.standard.PrinterInfo
 import kotlin.math.*
-////Олололло
+
 fun main()
 {
     println("\nРешебник на языке программирования Kotlin по Задачнику Абрамяна.")
@@ -39,9 +39,6 @@ fun main()
         else -> print("Такой задачи нет!")
     }
 }
-
-
-
 fun Begin1_Begin2()
 {
     print("Сделал Васильев Егор")
@@ -65,8 +62,6 @@ fun Begin1_Begin2()
     }
 
 }
-
-
 fun Begin3()
 {
     print("\nСделал Васильев Егор")
@@ -220,8 +215,6 @@ fun Case1()
         print("Воскресенье")
     }
 }
-
-
 fun Begin_40()
 {
     println("Сделал Лунёв Никита")
@@ -253,10 +246,6 @@ fun Begin_40()
     println(F1)
     println(F2)
 }
-
-
-
-
 fun Integer2()
 {
     println("Сделал Круговых Константин")
