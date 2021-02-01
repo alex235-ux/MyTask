@@ -31,7 +31,7 @@ fun main()
         "i1" -> Integer1()
         "Integer1" -> Integer1()
         "c1"  -> Case1()
-        "Case1"  -> Case1()
+        "Case1"  -> Case1()//
         else -> print("Такой задачи нет!")
     }
 }
