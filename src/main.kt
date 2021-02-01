@@ -26,6 +26,8 @@ fun main()
         "Begin7" -> Begin7()
         "b8" -> Begin8()
         "Begin8" -> Begin8()
+        "b9"  -> Begin9()
+        "Begin9" -> Begin9()
         "b10" -> Begin10()
         "Begin10" -> Begin10()
         "i1" -> Integer1()
@@ -40,6 +42,7 @@ fun main()
 
 fun Begin1_Begin2()
 {
+    print("Сделал Васильев Егор")
     println("Введите сторону квадрата: ")
     var a = readLine()!!.toFloat()
     println("Введите операцию: найти площадь квадрата (S) или периметр квадрата (P)")
@@ -148,8 +151,14 @@ fun Begin8()
 }
 fun Begin9()
 {
-
-
+    print("\nСделал Васильев Егор")
+    print("\nДаны два неотрицательных числа a и b. Найти их среднее геометрическое, то есть квадратный корень из их произведения: √ a·b.")
+    print("\nВведите a: ")
+    var a = readLine()!!.toFloat()
+    print("\nВведите b: ")
+    var b = readLine()!!.toFloat()
+    var sqr = sqrt(a*b)
+    print("\nОтвет: $sqr")
 }
 fun Begin10()
 {
