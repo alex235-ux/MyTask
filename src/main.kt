@@ -36,6 +36,7 @@ fun main()
         "i2" -> Integer2()
         "c1"  -> Case1()
         "Case1"  -> Case1()//
+        "808" -> Averin()
         "977" -> Dmitry()
         else -> print("Такой задачи нет!")
     }
@@ -275,3 +276,9 @@ fun Dmitry()
 
 }
 
+fun Averin()
+{
+    val a = 8.0
+    val b = 9.0
+    println (sqrt(a*b))
+}
