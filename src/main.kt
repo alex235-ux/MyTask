@@ -13,19 +13,26 @@ fun main()
     when(user_choise)
     {
         "b1_b2" -> Begin1_Begin2()
+        "Begin1_Begin_2" -> Begin1_Begin2()
         "b3"  -> Begin3()
+        "Begin3" -> Begin3()
         "b4" -> Begin4()
+        "Begin4" -> Begin4()
         "b5" -> Begin5()
-        "b8" -> Begin8()
-        "b10" -> Begin10()
-        "c1"  -> Case1()
-        "i1" -> Integer1()
+        "Begin5" -> Begin5()
         "b6" -> Begin6()
+        "Begin6" -> Begin6()
         "b7" -> Begin7()
+        "Begin7" -> Begin7()
+        "b8" -> Begin8()
+        "Begin8" -> Begin8()
+        "b10" -> Begin10()
+        "Begin10" -> Begin10()
+        "i1" -> Integer1()
+        "Integer1" -> Integer1()
+        "c1"  -> Case1()
+        "Case1"  -> Case1()
         else -> print("Такой задачи нет!")
-
-
-
     }
 }
 
