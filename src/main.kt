@@ -36,6 +36,7 @@ fun main()
         "i2" -> Integer2()
         "c1"  -> Case1()
         "Case1"  -> Case1()//
+        "977" -> Dmitry()
         else -> print("Такой задачи нет!")
     }
 }
@@ -256,3 +257,21 @@ fun Integer2()
     println(m1)
     println("столько тонн в вашем числе")
 }
+
+
+fun Dmitry()
+{
+    println("Это Дмитрий!")
+
+    var a = 15
+    println("Сторона квадрата а = $a")
+    var S =a*a
+    print("Площадб квадрата = $S")
+
+
+
+
+
+
+}
+
