@@ -33,7 +33,6 @@ fun main()
         "c1"  -> Case1()
         "Case1"  -> Case1()
         else -> print("Такой задачи нет!")
-        
     }
 }
 
