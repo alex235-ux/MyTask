@@ -33,6 +33,7 @@ fun main()
         "b40" -> Begin_40()
         "i1" -> Integer1()
         "Integer1" -> Integer1()
+        "i2" -> Integer2()
         "c1"  -> Case1()
         "Case1"  -> Case1()//
         else -> print("Такой задачи нет!")
@@ -251,4 +252,18 @@ fun Begin_40()
     println(Y)
     println(F1)
     println(F2)
+}
+
+
+
+
+fun Integer2()
+{
+    println("Сделал Круговых Константин")
+    println("Задача Integer2")
+    println("введте число больше 1000")
+    var m = readLine()!!.toInt()
+    val m1 = m/1000!!.toInt()
+    println(m1)
+    println("столько тонн в вашем числе")
 }
