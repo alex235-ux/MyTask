@@ -24,8 +24,7 @@ fun main()
         "Begin6" -> Begin6()
         "b7" -> Begin7()
         "Begin7" -> Begin7()
-        "b8" -> Begin8()
-        "Begin8" -> Begin8()
+        "b8","Begin8" -> Begin8()
         "b9"  -> Begin9()
         "Begin9" -> Begin9()
         "b10" -> Begin10()
@@ -34,12 +33,14 @@ fun main()
         "i1" -> Integer1()
         "Integer1" -> Integer1()
         "i2" -> Integer2()
+        "if1" -> If1()
         "c1"  -> Case1()
         "Case1"  -> Case1()
         "c2" -> Case2()
         "Case2" -> Case2()
         "808" -> Averin()
         "977" -> Dmitry()
+        "f1" -> For1()
         else -> print("Такой задачи нет!")
     }
 }
@@ -185,40 +186,62 @@ fun Integer1()
     var M = (L / 100)
     print("\n Метров: $M")
 }
-fun Case1()
+fun Case1_if()
 {
     print("Сделал Васильев Егор")
     print("\n Дано целое число в диапазоне 1–7. Вывести строку — название дня недели, соответствующее данному числу (1 — «понедельник», 2 — «вторник» и т. д.).")
-    var dw = readLine()
-    if (dw == "1")
+    var dw = readLine()!!.toInt()
+    if (dw == 1)
     {
         print("Понедельник")
     }
-    if (dw == "2")
+    if (dw == 2)
     {
         print("Вторник")
     }
-    if (dw == "3")
+    if (dw == 3)
     {
         print("Среда")
     }
-    if (dw == "4")
+    if (dw == 4)
     {
         print("Четверг")
     }
-    if (dw == "5")
+    if (dw == 5)
     {
         print("Пятница")
     }
-    if (dw == "6")
+    if (dw == 6)
     {
         print("Суббота")
     }
-    if (dw == "7")
+    if (dw == 7)
     {
         print("Воскресенье")
     }
 }
+fun Case1()
+{
+    print("Сделал Васильев Егор")
+    print("\n Дано целое число в диапазоне 1–7.\n Вывести строку — название дня недели, соответствующее данному числу\n(1 — «понедельник», 2 — «вторник» и т. д.)\nВведите число: ")
+    var dw = readLine()!!.toInt()
+    when(dw)
+    {
+        1 ->  print("Понедельник")
+        2 ->  print("Вторник")
+        3 ->  print("Среда")
+        4 ->  print("Четверг")
+        5 ->  print("Пятница")
+        6 ->  print("Суббота")
+        7 ->  print("Воскресенье")
+        else -> print("Дней недели всего 7!")
+    }
+}
+
+
+
+
+
 fun Case2()
 {
     print("\nСделал Васильев Егор")
@@ -278,6 +301,38 @@ fun Integer2()
     val m1 = m/1000!!.toInt()
     println(m1)
     println("столько тонн в вашем числе")
+}
+
+fun If1()
+{ println("If1.")
+    println("Решила коллегия группы ИТВ2")
+    print("Введите целое число: ")
+    var num_int = readLine()!!.toInt()
+    if(num_int > 0)
+    {
+        num_int = num_int + 1
+        println("Число оказалось положительным, поэтому +1 : $num_int")
+    }
+    else
+    {
+        println("Число оказалось отрицательным, поэтому ничего : $num_int")
+    }
+}
+
+fun For1()
+{
+    println("For1.")
+    println("Решила коллегия группы ИТВ2")
+    print("Введите целое число K: ")
+    var K = readLine()!!.toInt()
+    print("Введите количество раз N: ")
+    var N = readLine()!!.toInt()
+    for (i in 1..N)
+    {
+        println(K)
+    }
+
+
 }
 
 
