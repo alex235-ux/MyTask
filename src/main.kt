@@ -41,6 +41,7 @@ fun main()
         "808" -> Averin()
         "977" -> Dmitry()
         "f2222" -> for2222()
+        "for2" -> For2()
         else -> print("Такой задачи нет!")
     }
 }
@@ -325,7 +326,21 @@ fun Averin()
 
 
 
-
+fun For2()
+{
+    println("Сделал Круговых Константин задача For2")
+    println("Введите число ААААААААААААААААААААААААААААААААААААААААААААААААААА")
+    var a = readLine()!!.toInt()
+    println("Введите число БББББББББББББББББББББББББББББББББББББББББББББББББББ")
+    var b = readLine()!!.toInt()
+    println("Введите число NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN раз")
+    for (i in a..b)
+    {
+        println(i)
+    }
+    println("такое число чисел между а и б")
+    println(b-a)
+}
 
 
 
