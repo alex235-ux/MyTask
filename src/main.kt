@@ -414,7 +414,7 @@ fun  For8()
     }
 }
 
-fun For9() {//alexander20081002@gmail.com
+fun For9() {//alexander20081002@gmail.com//
 
     println("Сделал александрррр")
     println("Даны два целых числа A и B (A < B). Найти сумму квадратов всех целых\n" +
