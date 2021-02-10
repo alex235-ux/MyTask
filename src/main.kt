@@ -42,6 +42,8 @@ fun main()
         "977" -> Dmitry()
         "f2222" -> for2222()
         "for2" -> For2()
+         "for8"-> For8()
+         "for9"-> For9()
         else -> print("Такой задачи нет!")
     }
 }
@@ -394,3 +396,43 @@ fun for2222() {
     }
     println("opa")
 }
+
+
+fun  For8()
+{
+    println("сделал александрррр")
+    println("Даны два целых числа A и B (A < B). Найти произведение всех целых\n" +
+            "чисел от A до B включительно.")
+    println("Введите число А) ")
+    var A = readLine()!!.toInt()
+    println("Введите число В)) ")
+    var B = readLine()!!.toInt()
+    println("Введите N))) ")
+    for (i in A..B)
+    {
+        println(i*A)
+    }
+}
+
+fun For9() {
+    println("Сделал александрррр")
+    println("Даны два целых числа A и B (A < B). Найти сумму квадратов всех целых\n" +
+            "чисел от A до B включительно")
+    println("введите число A: ")
+    var A = readLine()!!.toInt()
+    println("Введите число B) ")
+    var B = readLine()!!.toInt()
+    println("Введите число N) ")
+    var bufer = 0
+    for (i in A..B) {
+
+        println(i*i)
+        bufer=bufer+i*i
+
+    }
+    print(bufer)
+}
+
+
+
+
